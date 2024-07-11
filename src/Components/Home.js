@@ -23,19 +23,19 @@ const Home = () => {
         <p>More content to demonstrate scrolling...</p>
         <p>More content to demonstrate scrolling...</p>
         <div className='testcase-container'>
-        <div className='testcases-container-1'>
+        <div className='testcases-container'>
           <h3 className='testcase-text'>Test Cases-1</h3>
         </div>
-        <div className='testcases-container-2'>
+        <div className='testcases-container'>
           <h3 className='testcase-text'>Test Cases-2</h3>
         </div>
-        <div className='testcases-container-3'>
+        <div className='testcases-container'>
           <h3 className='testcase-text'>Test Cases-3</h3>
         </div>
-        <div className='testcases-container-4'>
+        <div className='testcases-container'>
           <h3 className='testcase-text'>Test Cases-4</h3>
         </div>
-        <div className='testcases-container-5'>
+        <div className='testcases-container'>
           <h3 className='testcase-text'>Test Cases-5</h3>
         </div>
       </div>
