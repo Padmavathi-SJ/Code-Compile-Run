@@ -3,10 +3,16 @@ import '../Styles/Home.css';
 
 const Home = () => {
   const [language, setLanguage] = useState('python');
-  
+  const [customInput, setCustomInput] = useState('');
+
   const handleLanguageChange = (e) => {
     setLanguage(e.target.value);
   }
+
+  const handleCustomInputChange = (e) => {
+    setCustomInput(e.target.value);
+  }
+
   return (
     <div className='container'>
       <div className='column left'>
@@ -16,6 +22,23 @@ const Home = () => {
         <p>More content to demonstrate scrolling...</p>
         <p>More content to demonstrate scrolling...</p>
         <p>More content to demonstrate scrolling...</p>
+        <div className='testcase-container'>
+        <div className='testcases-container-1'>
+          <h3 className='testcase-text'>Test Cases-1</h3>
+        </div>
+        <div className='testcases-container-2'>
+          <h3 className='testcase-text'>Test Cases-2</h3>
+        </div>
+        <div className='testcases-container-3'>
+          <h3 className='testcase-text'>Test Cases-3</h3>
+        </div>
+        <div className='testcases-container-4'>
+          <h3 className='testcase-text'>Test Cases-4</h3>
+        </div>
+        <div className='testcases-container-5'>
+          <h3 className='testcase-text'>Test Cases-5</h3>
+        </div>
+      </div>
       </div>
       <div className='column right'>
         <div className='editor-container'>
@@ -32,14 +55,15 @@ const Home = () => {
           <textarea className='editor' placeholder={`Write your ${language} code here...`} wrap="soft"></textarea>
           <div className='input-container'>
             <h3>Custom Input:</h3>
-            <div className='output-box'></div>
+            <textarea
+              className='input-box'
+              value={customInput}
+              onChange={handleCustomInputChange}
+              placeholder='Enter your input'
+              wrap="soft"
+            />
           </div>
-          <div className='testcases-container'>
-            <h3>Test Cases:</h3>
-            <div className='testcases-box'>
-              <p>Status: </p>
-            </div>
-          </div>
+          <div className='output-box'></div>
         </div>
       </div>
     </div>
