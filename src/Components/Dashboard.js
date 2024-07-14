@@ -5,9 +5,9 @@ import '../css/Dashboard.css';
 
 const Dashboard = () => {
     return (
-        <div className='home-container'>
+        <div className='Sidebar'>
             <Navbar />
-            <div className='content'>
+            <div className='dashboard-content'>
                 <h2>Welcome to My App</h2>
                 <p>This is the main content area.</p>
             </div>
