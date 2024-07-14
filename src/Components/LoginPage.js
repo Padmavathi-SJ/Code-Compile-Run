@@ -1,10 +1,9 @@
 import React from 'react';
-import '../Styles/LoginPage.css';
+import '../css/LoginPage.css';
 
 const LoginPage = ({ onLogin }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Directly call onLogin to simulate a successful login
     onLogin();
   };
 
@@ -27,6 +26,6 @@ const LoginPage = ({ onLogin }) => {
       </div>
     </div>
   );
-}
+};
 
 export default LoginPage;
