@@ -3,10 +3,10 @@ import React from 'react';
 import Navbar from './Navbar';
 import '../css/Problems.css';
 
-const Problems = () => {
+const Problems = ({onLogout}) => {
     return (
         <div className='home-container'>
-            <Navbar />
+            <Navbar onLogout={onLogout}/>
             <div className='content'>
                 <h2>Problems Page</h2>
                 <p>This is the problems content area.</p>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import Dashboard from './Dashboard';
-import Assesment from './Assesment'; // Correct the typo
+import Assesment from './Assesment/Assesment'; // Correct the typo
 import Problems from './Problems';
 
 const MainPage = () => {
@@ -20,9 +20,9 @@ const MainPage = () => {
     return (
         <Routes>
             <Route path="/" element={isLoggedIn ? <Navigate to="/dashboard" /> : <LoginPage onLogin={handleLogin} />} />
-            <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : <Navigate to="/" />} />
-            <Route path="/assesment" element={isLoggedIn ? <Assesment /> : <Navigate to="/" />} />
-            <Route path="/problems" element={isLoggedIn ? <Problems /> : <Navigate to="/" />} />
+            <Route path="/dashboard" element={isLoggedIn ? <Dashboard onLogout={handleLogout}/> : <Navigate to="/" />} />
+            <Route path="/assesment" element={isLoggedIn ? <Assesment onLogout={handleLogout}/> : <Navigate to="/" />} />
+            <Route path="/problems" element={isLoggedIn ? <Problems onLogout={handleLogout} /> : <Navigate to="/" />} />
         </Routes>
     );
 };
