@@ -2,11 +2,16 @@
 import React from 'react';
 import { RxDashboard } from "react-icons/rx";
 import { FaClipboardList, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../css/Navbar.css';
 
+const Navbar = ({ onLogout }) => {
+    const navigate = useNavigate();
 
-const Navbar = () => {
+    const handleLogout = () => {
+        onLogout();
+        navigate('/');
+    };
     return (
         <div className='sidebar'>
             <div className='logo'>
@@ -21,8 +26,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="/assessment" className='nav-link'>
-                            <FaClipboardList className='nav-icon' /> Assessment
+                        <Link to="/assesment" className='nav-link'>
+                            <FaClipboardList className='nav-icon' /> Assesment
                         </Link>
                     </li>
                     <li className='nav-item'>
@@ -31,7 +36,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <span className='nav-link logout-link'>
+                        <span className='nav-link logout-link' onClick={handleLogout}>
                             <FaSignOutAlt className='nav-icon' /> Logout
                         </span>
                     </li>
