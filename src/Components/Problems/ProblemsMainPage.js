@@ -1,48 +1,43 @@
-import React, { useState } from 'react';
-import C from '../Problems/C';
-import Java from '../Problems/Java';
-import Python from '../Problems/Python';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../../css/ProblemsMainPage.css';
 
 
 const ProblemsMainPage = () =>  {
-
-    const [showTest, setShowTest] = useState(false);
-  
-    const handleNavigation = () => {
-      setShowTest(true);
-    };
-  
-    if (showTest) {
-      return <C />;
-    }
-
   return (
     <div className='main-container'>
-    <h1>On Going</h1>
 
-    <div className='ongoing-container' onClick={handleNavigation} style={{ cursor: 'pointer' }}>
-      <img src="./images/C-program.png" alt="placeholder" className='ongoing-image' />
+    <div className='ongoing-container'  style={{ cursor: 'pointer' }}>
+      <Link to="/Problems/C">
+      <img src="./images/C-program.png" alt="C Programming" className='ongoing-image' />
+      </Link>
       <div className='ongoing-text'>
         C Programming
       </div>
     </div>
 
-    <div className='ongoing-container' onClick={handleNavigation} style={{ cursor: 'pointer' }}>
-      <img src="./images/C-program.png" alt="placeholder" className='ongoing-image' />
+    <div className='ongoing-container' style={{ cursor: 'pointer' }}>
+      <Link to="/Problems/Java">
+      <img src="./images/C-program.png" alt="Java Programming" className='ongoing-image' />
+      </Link>
       <div className='ongoing-text'>
         Java Programming
       </div>
     </div>
 
-    <div className='ongoing-container' onClick={handleNavigation} style={{ cursor: 'pointer' }}>
-      <img src="./images/C-program.png" alt="placeholder" className='ongoing-image' />
+    <div className='ongoing-container' style={{ cursor: 'pointer' }}>
+      <Link to="/Problems/Python">
+      <img src="./images/C-program.png" alt="Python Programming" className='ongoing-image' />
+      </Link>
       <div className='ongoing-text'>
         Python Programming
       </div>
     </div>
 
+   
   </div>
   )
 }
+
 
 export default ProblemsMainPage;

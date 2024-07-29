@@ -1,47 +1,42 @@
 import React from 'react';
-import '../../css/JavaProblemsList.css';
+import '../../css/CProblem.css';
 
-const JavaProgram = () => {
+const CProblem = () => {
   return (
     <div className='main-conatainer'> 
     <table className='table'>
         <thead>
             <tr>
-                <th>Status</th>
+                <th>Date</th>
                 <th>Problem</th>
                 <th>Submission</th>
-                <th>Solution</th>
             </tr>
         </thead>
 
         <tbody>
             
             <tr>
-                <td>Completed</td>
+                <td>26.05.2024</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
+                <td>padma.c</td>
             </tr>
 
             <tr>
-                <td>Completed</td>
+                <td>26.05.2024</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
+                <td>padma.c</td>
             </tr>
 
             <tr>
-                <td>Completed</td>
+                <td>26.05.2024</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
+                <td>padma.c</td>
             </tr>
 
             <tr>
-                <td>Completed</td>
+                <td>26.05.2024</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
+                <td>padma.c</td>
             </tr>
 
 
@@ -52,4 +47,4 @@ const JavaProgram = () => {
   )
 }
 
-export default JavaProgram
+export default CProblem

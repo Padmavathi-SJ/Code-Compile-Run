@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/C.css';
+import '../../css/CProblemsList.css';
 
 const CProgram = () => {
   return (
@@ -10,6 +10,7 @@ const CProgram = () => {
                 <th>Status</th>
                 <th>Problem</th>
                 <th>Submission</th>
+                <th>Solution</th>
             </tr>
         </thead>
 
@@ -19,24 +20,28 @@ const CProgram = () => {
                 <td>Completed</td>
                 <td>Short content Medium lengthMedium length</td>
                 <td>padma.c</td>
+                <td>Sol.c</td>
             </tr>
 
             <tr>
                 <td>Completed</td>
                 <td>Short content Medium lengthMedium length</td>
                 <td>padma.c</td>
+                <td>Sol.c</td>
             </tr>
 
             <tr>
                 <td>Completed</td>
                 <td>Short content Medium lengthMedium length</td>
                 <td>padma.c</td>
+                <td>Sol.c</td>
             </tr>
 
             <tr>
                 <td>Completed</td>
                 <td>Short content Medium lengthMedium length</td>
                 <td>padma.c</td>
+                <td>Sol.c</td>
             </tr>
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Python.css';
+import '../../css/PythonProblemsList.css';
 
 
 const PythonProgram = () => {
