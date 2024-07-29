@@ -1,7 +1,8 @@
 // src/pages/Problems.js
 import React from 'react';
-import Navbar from './Navbar';
-import '../css/Problems.css';
+import Navbar from '../Navbar';
+import '../../css/Problems.css';
+import ProblemsMainPage from '../Problems/ProblemsMainPage';
 
 const Problems = ({onLogout}) => {
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/Compiler.css';
+import '../../../css/Compiler.css';
 
 const Compiler = () => {
   const [language, setLanguage] = useState('python');

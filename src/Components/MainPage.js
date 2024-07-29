@@ -4,7 +4,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import Dashboard from './Dashboard';
 import Assesment from './Assesment/Assesment'; // Correct the typo
-import Problems from './Problems';
+import Problems from './Problems/Problems';
 
 const MainPage = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
