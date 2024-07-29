@@ -1,0 +1,26 @@
+/* src/css/Test.css */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .table {
+    height: 50%;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #020202;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
