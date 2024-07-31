@@ -2,11 +2,11 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import '../../css/Problems.css';
-import ProblemsMainPage from '../Problems/ProblemsMainPage';
+import ProblemsMainPage from './ProblemsMainPage';
 import {Routes, Route} from 'react-router-dom';
-import CProgram from './C';
-import JavaProgram from './Java';
-import PythonProgram from './Python';
+import CProblemList from './CProblemList';
+import JavaProblemList from './JavaProblemList';
+import PythonProblemList from './PythonProblemList';
 
 const Problems = ({onLogout}) => {
     return (
@@ -15,9 +15,9 @@ const Problems = ({onLogout}) => {
             <div className='content'>
                 <Routes>
                     <Route path="/" element={ <ProblemsMainPage /> } />
-                    <Route path="/Problems/C" element={ <CProgram /> } />
-                    <Route path="/Problems/Java" element={ <JavaProgram /> } />
-                    <Route path="/Problems/Python" element={ <PythonProgram /> } />
+                    <Route path="CProblemList" element={ <CProblemList /> } />
+                    <Route path="JavaProblemList" element={ <JavaProblemList /> } />
+                    <Route path="PythonProblemList" element={ <PythonProblemList /> } />
                 </Routes>
             </div>
         </div>

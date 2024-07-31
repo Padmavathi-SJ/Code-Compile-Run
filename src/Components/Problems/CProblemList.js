@@ -1,16 +1,16 @@
 import React from 'react';
-import '../../css/PythonProblemsList.css';
+import '../../css/CProblemsList.css';
 
-
-const PythonProgram = () => {
+const CProblemList = () => {
   return (
-    <div className='main-conatainer'> 
+    <div className='main-container'> 
     <table className='table'>
         <thead>
             <tr>
                 <th>Status</th>
                 <th>Problem</th>
                 <th>Submission</th>
+                <th>Solution</th>
             </tr>
         </thead>
 
@@ -20,24 +20,14 @@ const PythonProgram = () => {
                 <td>Completed</td>
                 <td>Short content Medium lengthMedium length</td>
                 <td>padma.c</td>
+                <td>Sol.c</td>
             </tr>
 
             <tr>
-                <td>Completed</td>
+                <td>Not Completed</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.c</td>
-            </tr>
-
-            <tr>
-                <td>Completed</td>
-                <td>Short content Medium lengthMedium length</td>
-                <td>padma.c</td>
-            </tr>
-
-            <tr>
-                <td>Completed</td>
-                <td>Short content Medium lengthMedium length</td>
-                <td>padma.c</td>
+                <td>-----</td>
+                <td>Sol.c</td>
             </tr>
 
 
@@ -48,4 +38,4 @@ const PythonProgram = () => {
   )
 }
 
-export default PythonProgram
+export default CProblemList;

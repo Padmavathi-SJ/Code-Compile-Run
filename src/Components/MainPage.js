@@ -21,8 +21,8 @@ const MainPage = () => {
         <Routes>
             <Route path="/" element={isLoggedIn ? <Navigate to="/dashboard" /> : <LoginPage onLogin={handleLogin} />} />
             <Route path="/dashboard" element={isLoggedIn ? <Dashboard onLogout={handleLogout}/> : <Navigate to="/" />} />
-            <Route path="/assesment" element={isLoggedIn ? <Assesment onLogout={handleLogout}/> : <Navigate to="/" />} />
-            <Route path="/problems" element={isLoggedIn ? <Problems onLogout={handleLogout} /> : <Navigate to="/" />} />
+            <Route path="/assesment/*" element={isLoggedIn ? <Assesment onLogout={handleLogout}/> : <Navigate to="/" />} />
+            <Route path="/problems/*" element={isLoggedIn ? <Problems onLogout={handleLogout} /> : <Navigate to="/" />} />
         </Routes>
     );
 };

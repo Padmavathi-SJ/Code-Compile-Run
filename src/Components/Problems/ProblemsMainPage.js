@@ -8,8 +8,8 @@ const ProblemsMainPage = () =>  {
     <div className='main-container'>
 
     <div className='ongoing-container'  style={{ cursor: 'pointer' }}>
-      <Link to="/Problems/C">
-      <img src="./images/C-program.png" alt="C Programming" className='ongoing-image' />
+      <Link to="CProblemList">
+      <img src="./images/C-program.png" alt="C Problems" className='ongoing-image' />
       </Link>
       <div className='ongoing-text'>
         C Programming
@@ -17,8 +17,8 @@ const ProblemsMainPage = () =>  {
     </div>
 
     <div className='ongoing-container' style={{ cursor: 'pointer' }}>
-      <Link to="/Problems/Java">
-      <img src="./images/C-program.png" alt="Java Programming" className='ongoing-image' />
+      <Link to="JavaProblemList">
+      <img src="./images/C-program.png" alt="Java Problems" className='ongoing-image' />
       </Link>
       <div className='ongoing-text'>
         Java Programming
@@ -26,8 +26,8 @@ const ProblemsMainPage = () =>  {
     </div>
 
     <div className='ongoing-container' style={{ cursor: 'pointer' }}>
-      <Link to="/Problems/Python">
-      <img src="./images/C-program.png" alt="Python Programming" className='ongoing-image' />
+      <Link to="PythonProblemList">
+      <img src="./images/C-program.png" alt="Python Problems" className='ongoing-image' />
       </Link>
       <div className='ongoing-text'>
         Python Programming

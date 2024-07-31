@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../css/JavaProblemsList.css';
 
-const JavaProgram = () => {
+const JavaProblemList = () => {
   return (
-    <div className='main-conatainer'> 
+    <div className='main-container'> 
     <table className='table'>
         <thead>
             <tr>
@@ -24,23 +24,9 @@ const JavaProgram = () => {
             </tr>
 
             <tr>
-                <td>Completed</td>
+                <td>Not Completed</td>
                 <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
-            </tr>
-
-            <tr>
-                <td>Completed</td>
-                <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
-                <td>Sol.java</td>
-            </tr>
-
-            <tr>
-                <td>Completed</td>
-                <td>Short content Medium lengthMedium length</td>
-                <td>padma.java</td>
+                <td>--------</td>
                 <td>Sol.java</td>
             </tr>
 
@@ -52,4 +38,4 @@ const JavaProgram = () => {
   )
 }
 
-export default JavaProgram
+export default JavaProblemList
