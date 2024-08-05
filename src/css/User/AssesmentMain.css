@@ -1,0 +1,44 @@
+.main-container {
+  padding: 20px; /* Add some padding to the main container */
+}
+
+.header-container {
+  width: 100%; /* Make sure header takes full width */
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+.header-container h2 {
+  margin: 0; /* Remove default margin */
+  padding-left: 120px; /* Add some padding to the left for spacing */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: nowrap; /* Keep containers in a single row */
+  gap: 20px; /* Add consistent space between containers */
+}
+
+.ongoing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 130px;
+  width: 200px;
+  border-radius: 7px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ongoing-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.ongoing-text {
+  font-size: 18px;
+  color: #111010;
+}

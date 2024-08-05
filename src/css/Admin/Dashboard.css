@@ -1,0 +1,48 @@
+/* src/css/Dashboard.css */
+.dashboard-content {
+    padding: 20px;
+    color: #333;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.subject-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.dashboard-content h2 {
+    margin-bottom: 20px;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke-linecap: round;
+}
+
+.CircularProgressbar-text {
+    font-size: 16px;
+    fill: #333;
+}

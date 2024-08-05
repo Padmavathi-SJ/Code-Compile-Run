@@ -1,28 +1,34 @@
-// src/pages/MainPage.js
 import React, { useState } from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import UserMainPage from './User/UserMainPage';
+import AdminMainPage from './Admin/AdminMainPage';
 import LoginPage from './LoginPage';
-import Dashboard from './Dashboard';
-import Assesment from './Assesment/Assesment'; // Correct the typo
-import Problems from './Problems/Problems';
 
 const MainPage = () => {
+    const [isAdmin, setIsAdmin] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    const handleLogin = () => {
+    const handleLogin = (isAdminUser) => {
+        setIsAdmin(isAdminUser);
         setIsLoggedIn(true);
     };
 
     const handleLogout = () => {
         setIsLoggedIn(false);
-    }
+        setIsAdmin(false);
+    };
 
     return (
         <Routes>
-            <Route path="/" element={isLoggedIn ? <Navigate to="/dashboard" /> : <LoginPage onLogin={handleLogin} />} />
-            <Route path="/dashboard" element={isLoggedIn ? <Dashboard onLogout={handleLogout}/> : <Navigate to="/" />} />
-            <Route path="/assesment/*" element={isLoggedIn ? <Assesment onLogout={handleLogout}/> : <Navigate to="/" />} />
-            <Route path="/problems/*" element={isLoggedIn ? <Problems onLogout={handleLogout} /> : <Navigate to="/" />} />
+            <Route 
+                path="/" 
+                element={isLoggedIn 
+                    ? <Navigate to={isAdmin ? "/Admin/Dashboard" : "/User/Dashboard"} /> 
+                    : <LoginPage onLogin={handleLogin} />
+                } 
+            />
+            <Route path="/User/*" element={isLoggedIn ? <UserMainPage onLogout={handleLogout} /> : <Navigate to="/" />} />
+            <Route path="/Admin/*" element={isLoggedIn && isAdmin ? <AdminMainPage onLogout={handleLogout} /> : <Navigate to="/" />} />
         </Routes>
     );
 };

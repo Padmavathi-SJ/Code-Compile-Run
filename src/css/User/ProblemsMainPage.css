@@ -1,0 +1,37 @@
+/* src/css/AssesmentMain.css */
+
+.ongoing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 140px;
+  width: 170px;
+ /* border: 1px solid black; */
+  border-radius: 7px;
+  margin-right: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 250px;
+}
+
+.ongoing-container:last-child {
+  margin-right: 0; /* Ensure no extra margin for the last container in the row */
+}
+.ongoing-image {
+  width: 180px; /* Adjust size as needed */
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.ongoing-text {
+  font-size: 18px; /* Adjust size as needed */
+  color: #111010;
+}
+
+.main-container {
+  display: flex; /* Make main container flex for horizontal alignment */
+  flex-wrap: wrap; /* Allow wrapping of items to the next line */
+  justify-content: center; /* Center items horizontally */
+
+}
